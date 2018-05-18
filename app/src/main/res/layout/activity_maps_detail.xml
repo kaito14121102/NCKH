@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:weightSum="3"
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+    <ru.katso.livebutton.LiveButton
+        android:layout_marginLeft="5dp"
+        android:id="@+id/btnTenDuong"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Road"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#e91717"
+        app:backgroundColor="#17da14"
+        app:corners="2sp"
+        app:normalHeight="5dp"
+        app:pressedHeight="3dp"
+        app:shadowColor="#3c57d9" />
+    <ru.katso.livebutton.LiveButton
+        android:layout_marginLeft="5dp"
+
+        android:id="@+id/btnVeTinh"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Satellite"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#e91717"
+        app:backgroundColor="#17da14"
+        app:corners="2sp"
+        app:normalHeight="5dp"
+        app:pressedHeight="3dp"
+        app:shadowColor="#3c57d9" />
+    <ru.katso.livebutton.LiveButton
+        android:layout_marginLeft="5dp"
+
+        android:id="@+id/btnDiaHinh"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Street View"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#e91717"
+        app:backgroundColor="#17da14"
+        app:corners="2sp"
+        app:normalHeight="5dp"
+        app:pressedHeight="3dp"
+        app:shadowColor="#3c57d9" />
+
+</LinearLayout>
+    <EditText
+        android:text="khoa hoc tu nhien"
+        android:id="@+id/edtdiemBatDau"
+        android:hint="Enter origin address"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edtdiemDen"
+        android:hint="Enter destination address"
+        android:text="ben thanh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <ru.katso.livebutton.LiveButton
+            android:layout_marginLeft="5dp"
+            android:id="@+id/btnFindPath"
+            android:layout_weight="0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Find Road"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#e91717"
+            app:backgroundColor="#17da14"
+            app:corners="2sp"
+            app:normalHeight="5dp"
+            app:pressedHeight="3dp"
+            app:shadowColor="#3c57d9" />
+        <ru.katso.livebutton.LiveButton
+            android:layout_marginLeft="5dp"
+
+            android:id="@+id/btnSoKm"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Km"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#e91717"
+            app:backgroundColor="#17da14"
+            app:corners="2sp"
+            app:normalHeight="5dp"
+            app:pressedHeight="3dp"
+            app:shadowColor="#3c57d9" />
+        <ru.katso.livebutton.LiveButton
+            android:layout_marginLeft="5dp"
+
+            android:id="@+id/btnTime"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Time"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#e91717"
+            app:backgroundColor="#17da14"
+            app:corners="2sp"
+            app:normalHeight="5dp"
+            app:pressedHeight="3dp"
+            app:shadowColor="#3c57d9" />
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.app_pro.duan.com.duan.google_map.ThongTinMapActivity" />
+</LinearLayout>
+
